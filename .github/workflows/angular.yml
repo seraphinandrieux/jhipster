@@ -18,7 +18,7 @@
 #
 
 name: Angular
-on: [push, pull_request]
+on: [merge]
 env:
     JHI_RUN_APP: 1
     JHI_JDK: 11
