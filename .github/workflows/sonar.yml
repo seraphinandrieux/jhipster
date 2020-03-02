@@ -40,6 +40,8 @@ jobs:
             ${{ runner.os }}-maven-
       - name: Test with Maven
         run: mvn test --batch-mode
+      - name: Disable Shallow Clone
+        run: git fetch --unshallow
       - name: Run Sonar analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
