@@ -49,4 +49,4 @@ jobs:
         run: mvn  -ntp --batch-mode initialize org.jacoco:jacoco-maven-plugin:prepare-agent sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.verbose=true  -Dsonar.projectKey=seraphinandrieux_jhipster -Dsonar.organization=seraphinandrieux
       - name: install tree
         run: ls -a
-        
+
